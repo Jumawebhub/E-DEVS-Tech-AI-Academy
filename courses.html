@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>E Developers Technology - Courses</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="E Developers Technology courses, coding bootcamp Kenya, kids tech courses" name="keywords">
+    <meta content="Christmas Tech & AI Holiday Bootcamp 2026 - All Courses" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/academy logo.png" alt="E Developers Technology Logo" style="height: 55px; width: auto; object-fit: contain;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                                <!-- Courses Mega Menu -->
+                <div class="nav-item dropdown mega-menu-item">
+                    <a href="courses.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                    <div class="dropdown-menu mega-menu p-0 m-0 shadow-lg border-0">
+                        <div class="row g-0">
+                            <!-- Left: Category Sidebar -->
+                            <div class="col-lg-3 mega-menu-sidebar py-3">
+                                <a class="mega-cat-link active" data-cat="computer-office" href="computer-office-skills.html">
+                                    <i class="fa fa-desktop me-2"></i>Computer &amp; Office Skills
+                                </a>
+                                <a class="mega-cat-link" data-cat="programming" href="programming-web-dev.html">
+                                    <i class="fa fa-code me-2"></i>Programming &amp; Web Dev
+                                </a>
+                                <a class="mega-cat-link" data-cat="ai-cyber" href="ai-cybersecurity.html">
+                                    <i class="fa fa-robot me-2"></i>AI &amp; Cybersecurity
+                                </a>
+                                <a class="mega-cat-link" data-cat="fullstack" href="fullstack-robotics.html">
+                                    <i class="fa fa-layer-group me-2"></i>Full Stack &amp; Robotics
+                                </a>
+                            </div>
+                            <!-- Middle: Category Description -->
+                            <div class="col-lg-4 mega-menu-desc py-4 px-4">
+                                <div class="mega-desc-panel active" id="mega-computer-office">
+                                    <h5 class="text-primary mb-2">Computer &amp; Office Skills</h5>
+                                    <p class="text-muted small">Build essential digital literacy — from computer basics and typing to the full Microsoft Office suite. Perfect for beginners and young learners.</p>
+                                    <a href="computer-office-skills.html" class="btn btn-sm btn-primary mt-2">View All <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                                <div class="mega-desc-panel" id="mega-programming">
+                                    <h5 class="text-primary mb-2">Programming &amp; Web Dev</h5>
+                                    <p class="text-muted small">Learn to build real websites and apps with HTML, CSS, JavaScript, PHP and Python. Hands-on projects from day one.</p>
+                                    <a href="programming-web-dev.html" class="btn btn-sm btn-primary mt-2">View All <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                                <div class="mega-desc-panel" id="mega-ai-cyber">
+                                    <h5 class="text-primary mb-2">AI &amp; Cybersecurity</h5>
+                                    <p class="text-muted small">Explore the future of technology — Artificial Intelligence and Cybersecurity. Trending courses taught by experienced mentors.</p>
+                                    <a href="ai-cybersecurity.html" class="btn btn-sm btn-primary mt-2">View All <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                                <div class="mega-desc-panel" id="mega-fullstack">
+                                    <h5 class="text-primary mb-2">Full Stack &amp; Robotics</h5>
+                                    <p class="text-muted small">Go all-in with WAMP or MERN Full Stack development, or get hands-on with Robotics. Best-value packages for serious learners.</p>
+                                    <a href="fullstack-robotics.html" class="btn btn-sm btn-primary mt-2">View All <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                            <!-- Right: Course Offerings -->
+                            <div class="col-lg-5 mega-menu-courses py-4 px-4">
+                                <div class="mega-courses-panel active" id="mega-courses-computer-office">
+                                    <h6 class="text-primary fw-bold mb-3">Course Offerings</h6>
+                                    <a href="computer-office-skills.html" class="mega-course-link">
+                                        <span class="fw-semibold">Internet &amp; Email Basics</span>
+                                        <small class="text-muted d-block">4 Sessions &bull; 8 Hours &bull; Ksh 600</small>
+                                    </a>
+                                    <a href="computer-office-skills.html" class="mega-course-link">
+                                        <span class="fw-semibold">Typing Skills</span>
+                                        <small class="text-muted d-block">8 Sessions &bull; 16 Hours &bull; Ksh 1,200</small>
+                                    </a>
+                                    <a href="computer-office-skills.html" class="mega-course-link">
+                                        <span class="fw-semibold">Computer Basics</span>
+                                        <small class="text-muted d-block">8 Sessions &bull; 16 Hours &bull; Ksh 1,200</small>
+                                    </a>
+                                    <a href="computer-office-skills.html" class="mega-course-link">
+                                        <span class="fw-semibold">Microsoft PowerPoint</span>
+                                        <small class="text-muted d-block">8 Sessions &bull; 12 Hours &bull; Ksh 1,200</small>
+                                    </a>
+                                    <a href="computer-office-skills.html" class="mega-course-link">
+                                        <span class="fw-semibold">Microsoft Word</span>
+                                        <small class="text-muted d-block">8 Sessions &bull; 16 Hours &bull; Ksh 1,600</small>
+                                    </a>
+                                    <a href="computer-office-skills.html" class="mega-course-link">
+                                        <span class="fw-semibold">Microsoft Excel</span>
+                                        <small class="text-muted d-block">8 Sessions &bull; 16 Hours &bull; Ksh 2,000</small>
+                                    </a>
+                                    <a href="computer-office-skills.html" class="mega-course-link">
+                                        <span class="fw-semibold">Scratch Programming</span>
+                                        <small class="text-muted d-block">8 Sessions &bull; 16 Hours &bull; Ksh 1,600</small>
+                                    </a>
+                                    <a href="computer-office-skills.html" class="mega-course-link fw-semibold text-primary">
+                                        <span class="fw-semibold">Complete MS Office &amp; Typing Package ⭐</span>
+                                        <small class="text-muted d-block">42 Sessions &bull; 84 Hours &bull; Ksh 7,500</small>
+                                    </a>
+                                </div>
+                                <div class="mega-courses-panel" id="mega-courses-programming">
+                                    <h6 class="text-primary fw-bold mb-3">Course Offerings</h6>
+                                    <a href="programming-web-dev.html" class="mega-course-link">
+                                        <span class="fw-semibold">HTML &amp; CSS</span>
+                                        <small class="text-muted d-block">16 Sessions &bull; 32 Hours &bull; Ksh 4,000</small>
+                                    </a>
+                                    <a href="programming-web-dev.html" class="mega-course-link">
+                                        <span class="fw-semibold">Git &amp; GitHub</span>
+                                        <small class="text-muted d-block">4 Sessions &bull; 8 Hours &bull; Ksh 800</small>
+                                    </a>
+                                    <a href="programming-web-dev.html" class="mega-course-link">
+                                        <span class="fw-semibold">JavaScript</span>
+                                        <small class="text-muted d-block">16 Sessions &bull; 32 Hours &bull; Ksh 4,800</small>
+                                    </a>
+                                    <a href="programming-web-dev.html" class="mega-course-link">
+                                        <span class="fw-semibold">PHP</span>
+                                        <small class="text-muted d-block">20 Sessions &bull; 40 Hours &bull; Ksh 6,000</small>
+                                    </a>
+                                    <a href="programming-web-dev.html" class="mega-course-link">
+                                        <span class="fw-semibold">Python Programming</span>
+                                        <small class="text-muted d-block">20 Sessions &bull; 40 Hours &bull; Ksh 7,000</small>
+                                    </a>
+                                </div>
+                                <div class="mega-courses-panel" id="mega-courses-ai-cyber">
+                                    <h6 class="text-primary fw-bold mb-3">Course Offerings</h6>
+                                    <a href="ai-cybersecurity.html" class="mega-course-link">
+                                        <span class="fw-semibold">Artificial Intelligence (AI) 🔥</span>
+                                        <small class="text-muted d-block">16 Sessions &bull; 32 Hours &bull; Ksh 6,400</small>
+                                    </a>
+                                    <a href="ai-cybersecurity.html" class="mega-course-link">
+                                        <span class="fw-semibold">Cybersecurity 🔥</span>
+                                        <small class="text-muted d-block">16 Sessions &bull; 32 Hours &bull; Ksh 6,400</small>
+                                    </a>
+                                </div>
+                                <div class="mega-courses-panel" id="mega-courses-fullstack">
+                                    <h6 class="text-primary fw-bold mb-3">Course Offerings</h6>
+                                    <a href="fullstack-robotics.html" class="mega-course-link">
+                                        <span class="fw-semibold">Robotics</span>
+                                        <small class="text-muted d-block">20 Sessions &bull; 40 Hours &bull; Ksh 9,000</small>
+                                    </a>
+                                    <a href="fullstack-robotics.html" class="mega-course-link">
+                                        <span class="fw-semibold">WAMP Full Stack ⭐</span>
+                                        <small class="text-muted d-block">40 Sessions &bull; 80 Hours &bull; Ksh 15,000</small>
+                                    </a>
+                                    <a href="fullstack-robotics.html" class="mega-course-link">
+                                        <span class="fw-semibold">MERN Stack ⭐</span>
+                                        <small class="text-muted d-block">48 Sessions &bull; 96 Hours &bull; Ksh 18,000</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Courses Mega Menu -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Corporate</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="https://surl.li/hmeqoq" target="_blank" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Our Courses</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Courses</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
+                <h1 class="mb-5">Course Categories</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="computer-office-skills.html">
+                                <img class="img-fluid" src="img/booth.png" alt="Computer & Office Skills">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Computer &amp; Office Skills</h5>
+                                    <small class="text-primary">7 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="programming-web-dev.html">
+                                <img class="img-fluid" src="img/dusk.png" alt="Programming & Web Dev">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Programming &amp; Web Dev</h5>
+                                    <small class="text-primary">6 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="ai-cybersecurity.html">
+                                <img class="img-fluid" src="img/err.png" alt="AI & Cybersecurity">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">AI &amp; Cybersecurity</h5>
+                                    <small class="text-primary">2 Courses</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="fullstack-robotics.html">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/modern community.png" alt="Full Stack & Robotics" style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                            <h5 class="m-0">Full Stack &amp; Robotics</h5>
+                            <small class="text-primary">3 Courses</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories End -->
+
+    <!-- Browse Categories Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Browse Courses</h6>
+                <h1 class="mb-2">Christmas Tech &amp; AI Holiday Bootcamp 2026</h1>
+                <p class="mb-5 text-muted">Each session is 2 hours &bull; Live instructor-led &bull; Certificates awarded</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Computer & Office Skills -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="computer-office-skills.html" class="text-decoration-none">
+                        <div class="course-item bg-light text-center h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/booth.png" alt="Computer & Office Skills" style="height:200px;object-fit:cover;">
+                            </div>
+                            <div class="p-4">
+                                <div class="mb-3"><i class="fa fa-3x fa-desktop text-primary"></i></div>
+                                <h5 class="mb-2">Computer &amp; Office Skills</h5>
+                                <p class="text-muted small mb-3">From computer basics and typing to the full Microsoft Office suite.</p>
+                                <span class="text-primary fw-semibold">7 Courses &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Programming & Web Dev -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="programming-web-dev.html" class="text-decoration-none">
+                        <div class="course-item bg-light text-center h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/dusk.png" alt="Programming & Web Dev" style="height:200px;object-fit:cover;">
+                            </div>
+                            <div class="p-4">
+                                <div class="mb-3"><i class="fa fa-3x fa-code text-primary"></i></div>
+                                <h5 class="mb-2">Programming &amp; Web Dev</h5>
+                                <p class="text-muted small mb-3">HTML, CSS, JavaScript, PHP, Python — hands-on projects from day one.</p>
+                                <span class="text-primary fw-semibold">6 Courses &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- AI & Cybersecurity -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="ai-cybersecurity.html" class="text-decoration-none">
+                        <div class="course-item bg-light text-center h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/err.png" alt="AI & Cybersecurity" style="height:200px;object-fit:cover;">
+                            </div>
+                            <div class="p-4">
+                                <div class="mb-3"><i class="fa fa-3x fa-robot text-primary"></i></div>
+                                <h5 class="mb-2">AI &amp; Cybersecurity</h5>
+                                <p class="text-muted small mb-3">Trending AI and Cybersecurity courses taught by experienced mentors.</p>
+                                <span class="text-primary fw-semibold">2 Courses &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Full Stack & Robotics -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <a href="fullstack-robotics.html" class="text-decoration-none">
+                        <div class="course-item bg-light text-center h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/modern community.png" alt="Full Stack & Robotics" style="height:200px;object-fit:cover;">
+                            </div>
+                            <div class="p-4">
+                                <div class="mb-3"><i class="fa fa-3x fa-layer-group text-primary"></i></div>
+                                <h5 class="mb-2">Full Stack &amp; Robotics</h5>
+                                <p class="text-muted small mb-3">WAMP &amp; MERN Full Stack packages, plus hands-on Robotics.</p>
+                                <span class="text-primary fw-semibold">3 Courses &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Individual courses live on the category pages -->
+        </div>
+    </div>
+    <!-- Browse Categories End -->
+
+    <!-- Why Choose Us Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="section-title bg-white text-center text-primary px-3">Why Choose Us</h6>
+                <h1>Why Choose E Developers Technology?</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item pt-3"><div class="p-3">
+                        <i class="fa fa-3x fa-laptop-code text-primary mb-3"></i>
+                        <h6>Practical Coding</h6>
+                    </div></div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item pt-3"><div class="p-3">
+                        <i class="fa fa-3x fa-project-diagram text-primary mb-3"></i>
+                        <h6>Hands-on Projects</h6>
+                    </div></div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item pt-3"><div class="p-3">
+                        <i class="fa fa-3x fa-user-tie text-primary mb-3"></i>
+                        <h6>Experienced Mentors</h6>
+                    </div></div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item pt-3"><div class="p-3">
+                        <i class="fa fa-3x fa-certificate text-primary mb-3"></i>
+                        <h6>Certificates</h6>
+                    </div></div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item pt-3"><div class="p-3">
+                        <i class="fa fa-3x fa-tags text-primary mb-3"></i>
+                        <h6>Affordable Packages</h6>
+                    </div></div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item pt-3"><div class="p-3">
+                        <i class="fa fa-3x fa-calendar-alt text-primary mb-3"></i>
+                        <h6>Flexible Schedules</h6>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="courses.html">All Courses</a>
+                    <a class="btn btn-link" href="">Terms &amp; Condition</a>
+                    <a class="btn btn-link" href="">FAQs &amp; Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kenya</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0792 827 238</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0791 430 850</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0758 525 933</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4"><img class="img-fluid bg-light p-1" src="img/booth.png" alt="Gallery 1"></div>
+                        <div class="col-4"><img class="img-fluid bg-light p-1" src="img/dusk.png" alt="Gallery 2"></div>
+                        <div class="col-4"><img class="img-fluid bg-light p-1" src="img/modern community.png" alt="Gallery 3"></div>
+                        <div class="col-4"><img class="img-fluid bg-light p-1" src="img/err.png" alt="Gallery 4"></div>
+                        <div class="col-4"><img class="img-fluid bg-light p-1" src="img/booth.png" alt="Gallery 5"></div>
+                        <div class="col-4"><img class="img-fluid bg-light p-1" src="img/dusk.png" alt="Gallery 6"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Stay updated on new courses and bootcamp dates.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">E Developers Technology</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="courses.html">Courses</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
